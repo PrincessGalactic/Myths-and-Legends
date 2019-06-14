@@ -9,6 +9,67 @@
 		<link rel="manifest" href="/site.webmanifest">
 		<style>
 			
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: rgb(255, 255, 255);
+				
+				}
+				
+			li {
+				float: left;
+			
+				}
+				
+			li a, .dropbtn {
+				display: incline-block;
+				color: black;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;			
+			
+				)
+				
+			li a:hover, .dropdown:hover .dropbtn {
+				background-color: purple;
+				
+				}
+				
+			li.dropdown {
+				display: inline-block;
+				
+				}
+				
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: rgb(0, 0, 0);
+				display: block;
+				text-align: left;
+				
+				}
+				
+			.dropdown-content a {
+				color: rgb(255, 255, 255);
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+				
+				}
+				
+			.dropdown-content a:hover {
+				background-color: rgb(30, 20, 36);
+				
+				}
+				
+			.dropdown:hover .dropdown-content {
+				display: block;
+				
+				}
+			
 			body {
 				background-color: rgb(23, 23, 28);
 				color: rgb(224, 224, 252);
@@ -47,29 +108,7 @@
 				
 			}
 			
-			#Sub_Title_Myths {
-				position: absolute;
-				top: 330px;
-				left: 100px;
-			}
 			
-			#List_Myths {
-				position: absolute;
-				top: 370px;
-				left: 100px;
-			}
-			
-			#Sub_Title_Legends {
-				position: absolute;
-				top: 454px;
-				left: 100px;
-			}
-			
-			#List_Legends {
-				position: absolute;
-				top: 494px;
-				left: 100px;
-			}
 			
 		</style>
 		
@@ -93,24 +132,27 @@
 			with the help of common story devices, such as personification and <br>
 			allegories. </p>
 		
-		<h2 id="Sub_Title_Myths">Myths</h2>
-		
-		<ul id="List_Myths">
-			<li><a target="_blank"href="Greek_and_Roman_Mythology.html">Greek and Roman Mythology</a></li>
-			<li>Egyptian Mythology</li>
-			<li>Chinese Mythology</li>
-			<li>Japanese Mythology</li>
+		<ul>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Myths</a>
+				<div class="dropdown-content">
+					<a target="_blank" href="Greek_and_Roman_Mythology.html">Greek and Roman Mythology</a>
+					<a target="_blank" href="Egyptian_Mythology.html">Egyptian Mythology</a>
+					<a target="_blank" href="Chinese_and_Japanese_Mythology.html">Chinese and Japanese Mythology</a>
+				</div>
+			</li>
 			
-			
+			<li class="dropdown">
+				<a href="javescript:void(0)" class="dropbtn">Legends</a>
+				<div class="dropdown-content">
+					<a target="_blank" href="Japanese_Urban_Legends.html">Japanese Urban Legends</a>
+					<a target="_blank" href="Chinese_Urban_Legends.html">Chinese Urban Legends</a>
+					<a target="_blank" href="Creepypasta.html">Creepypasta</a>
+					<a target="_blank" href="Supernatural_Creatures.html">Supernatural Creatures</a>
+				</div>
+			</li>
 		</ul>
 		
-		<h2 id="Sub_Title_Legends">Legends</h2>
-		
-		<ul id="List_Legends">
-			<li>Japanese Urban Legends</li>
-			<li>Creepypasta</li>
-			<li>Supernatural Creatures</li>
-			<li>Chinese Urban Legends</li>
 	
 		
 	</body>
